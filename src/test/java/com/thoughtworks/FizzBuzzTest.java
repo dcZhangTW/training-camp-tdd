@@ -17,4 +17,11 @@ public class FizzBuzzTest {
         String result = FizzBuzz.report(number);
         Assert.assertEquals(result, "Buzz");
     }
+
+    @Test
+    public void shouldReturnWhizzWhenGiven7() {
+        int number = 7;
+        String result = FizzBuzz.report(number);
+        Assert.assertEquals(result, "Whizz");
+    }
 }
