@@ -73,4 +73,11 @@ public class FizzBuzzTest {
         String result = FizzBuzz.fizzBuzz(number);
         Assert.assertEquals("BuzzWhizz", result);
     }
+
+    @Test
+    public void shouldNotReturnBuzzWhenInclude7() {
+        int number = 75;
+        String result = FizzBuzz.fizzBuzz(number);
+        Assert.assertEquals("Whizz", result);
+    }
 }
