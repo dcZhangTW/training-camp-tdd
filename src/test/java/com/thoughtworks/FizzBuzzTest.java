@@ -41,9 +41,9 @@ public class FizzBuzzTest {
 
     @Test
     public void shouldReturnFizzBuzzWhenGivenMultiplesOf3And5() {
-        int number = 15;
+        int number = 60;
         String result = FizzBuzz.fizzBuzz(number);
-        Assert.assertEquals("Buzz", result);
+        Assert.assertEquals("FizzBuzz", result);
     }
 
     @Test
