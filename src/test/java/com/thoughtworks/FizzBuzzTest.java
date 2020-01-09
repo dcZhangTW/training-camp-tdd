@@ -78,6 +78,15 @@ public class FizzBuzzTest {
     public void shouldNotReturnBuzzWhenInclude7() {
         int number = 75;
         String result = FizzBuzz.fizzBuzz(number);
-        Assert.assertEquals("Whizz", result);
+        Assert.assertEquals("Fizz", result);
+        int number2 = 70;
+        String result2 = FizzBuzz.fizzBuzz(number2);
+        Assert.assertEquals("Whizz", result2);
+    }
+
+    @Test
+    public void shouldReturnNumber() {
+        int number = 2;
+        Assert.assertEquals(FizzBuzz.fizzBuzz(number), "2");
     }
 }
