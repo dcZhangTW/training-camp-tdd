@@ -43,12 +43,12 @@ public class FizzBuzzTest {
     public void shouldReturnFizzBuzzWhenGivenMultiplesOf3And5() {
         int number = 15;
         String result = FizzBuzz.fizzBuzz(number);
-        Assert.assertEquals("FizzBuzz", result);
+        Assert.assertEquals("Buzz", result);
     }
 
     @Test
     public void shouldReturnFizzBuzzWhizzWhenGivenMultiplesOf3And5And7() {
-        int number = 3 * 5 * 7;
+        int number = 3 * 5 * 7 * 2;
         String result = FizzBuzz.fizzBuzz(number);
         Assert.assertEquals("FizzBuzzWhizz", result);
     }
