@@ -9,7 +9,8 @@ class FizzBuzz {
     }
 
     private static String getFizz(int number) {
-        return number % 3 == 0 ? "Fizz" : "";
+        boolean isFizz = number % 3 == 0 || String.valueOf(number).contains("3");
+        return isFizz ? "Fizz" : "";
     }
 
     private static String getBuzz(int number) {
