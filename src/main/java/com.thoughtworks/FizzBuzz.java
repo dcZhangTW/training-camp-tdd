@@ -2,13 +2,18 @@ package com.thoughtworks;
 
 class FizzBuzz {
     static String report(int number) {
+        String result = "";
         if (number % 3 == 0) {
-            return "Fizz";
-        } else if (number % 5 == 0) {
-            return "Buzz";
-        } else if (number == 7) {
-            return "Whizz";
+            result += "Fizz";
         }
-        return "";
+
+        if (number % 5 == 0) {
+            result += "Buzz";
+        }
+
+        if (number == 7) {
+            result += "Whizz";
+        }
+        return result;
     }
 }
