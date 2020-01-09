@@ -10,4 +10,11 @@ public class FizzBuzzTest {
         String result = FizzBuzz.report(number);
         Assert.assertEquals(result, "Fizz");
     }
+
+    @Test
+    public void shouldReturnBuzzWhenGiven5() {
+        int number = 5;
+        String result = FizzBuzz.report(number);
+        Assert.assertEquals(result, "Buzz");
+    }
 }
