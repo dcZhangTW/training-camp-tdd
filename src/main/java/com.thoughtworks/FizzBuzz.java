@@ -14,7 +14,9 @@ class FizzBuzz {
     }
 
     private static String getBuzz(int number) {
-        return number % 5 == 0 ? "Buzz" : "";
+        boolean isBuzz = number % 5 == 0;
+        boolean regardlessBuzz = String.valueOf(number).contains("3");
+        return isBuzz && !regardlessBuzz ? "Buzz" : "";
     }
 
     private static String getWhizz(int number) {
