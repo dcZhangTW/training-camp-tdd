@@ -52,4 +52,11 @@ public class FizzBuzzTest {
         String result = FizzBuzz.report(number);
         Assert.assertEquals("FizzBuzzWhizz", result);
     }
+
+    @Test
+    public void shouldReturnFizzWhenInclude3() {
+        int number = 13;
+        String result = FizzBuzz.report(number);
+        Assert.assertEquals("Fizz", result);
+    }
 }
