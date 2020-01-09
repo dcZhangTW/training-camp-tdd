@@ -59,4 +59,11 @@ public class FizzBuzzTest {
         String result = FizzBuzz.fizzBuzz(number);
         Assert.assertEquals("Fizz", result);
     }
+
+    @Test
+    public void shouldOnlyReturnFizzWhenInclude3() {
+        int number = 30;
+        String result = FizzBuzz.fizzBuzz(number);
+        Assert.assertEquals("Fizz", result);
+    }
 }
