@@ -1,7 +1,7 @@
 package com.thoughtworks;
 
 class FizzBuzz {
-    static String report(int number) {
+    static String fizzBuzz(int number) {
         String result = getFizz(number);
         result += getBuzz(number);
         result += getWhizz(number);
