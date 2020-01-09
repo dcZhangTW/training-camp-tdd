@@ -38,4 +38,11 @@ public class FizzBuzzTest {
         String result = FizzBuzz.report(number);
         Assert.assertEquals(result, "Buzz");
     }
+
+    @Test
+    public void shouldReturnFizzBuzzWhenGivenMultiplesOf3And5() {
+        int number = 15;
+        String result = FizzBuzz.report(number);
+        Assert.assertEquals(result, "FizzBuzz");
+    }
 }
